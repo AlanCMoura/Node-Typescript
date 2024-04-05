@@ -1,0 +1,27 @@
+//Criar diretório
+
+//Criar package.json com o comando "npm init -y"
+
+//Instalar o typescript como base de desenvolvimento com o comando "npm i -D typescript"
+
+//Criar um arquivo de configuração do typescript com o comando "npx tsc --init"
+
+//Atualizar versão do javascript de conversão no arquivo de configuração para 2020 (mais atual) na linha --> "target": "es2020",
+
+//Instalar pacote de adaptação como dependência de desenvolvimento com o comando "npm install -D @types/node"
+
+USADO EM PRODUÇÃO //Executar conmando de conversão "npx tsc src/index.ts" OBS: o node não entende código typescript, por isso deve ser criado um arquivo de conversão em javascript.
+
+USADO EM DESENVOLVIMENTO //Instalar o tsx com o comando "npm install tsx -D" --> Sempre que quiser rodar o servidor utilizar o comando "npx tsx src/server.ts"
+
+//Salvar script de start no package.json "dev": "tsx watch src/server.ts"
+
+//Usar ESlint como mecanismo de padronização do projeto "npm i eslint @rocketseat/eslint-config -D"
+
+//Instalar knex e sqlite3
+
+//Criar um arquivo "knexfile" (por convensão) para armazenar as configurações do banco
+
+//Novo script criado --> "knex": "node --loader tsx ./node_modules/.bin/knex" para a leitura dos comandos do knex em typescript
+
+//Usar comando "npm run knex -- migrate:make create-documents" para a criação de uma migrate (histórico) do banco de dados
